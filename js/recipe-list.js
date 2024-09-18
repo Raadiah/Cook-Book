@@ -1,5 +1,24 @@
-const loadRecipe = async (itemName)=>{
-    const recipeListUrl = `https://www.themealdb.com/api/json/v1/1/search.php?s=${itemName}`;
+const recipeCategoryName = ()=>{
+    let recipeCategory = 'Potato';
+    let getRecipeCategory = () => {
+        return recipeCategory;
+    }
+    let setRecipeCategory = (categoryName) => {
+        recipeCategory = categoryName;
+        loadRecipe();
+    }
+
+    return {
+        getRecipeCategory: getRecipeCategory,
+        setRecipeCategory: setRecipeCategory
+    }
+}
+
+const recipeCategory = recipeCategoryName();
+
+const loadRecipe = async ()=>{
+    const itemName = recipeCategory.getRecipeCategory();
+    const recipeListUrl = `json\\${itemName}.json`;
 
     try{
         const recipeListJson = await fetch(recipeListUrl);
