@@ -4,7 +4,7 @@ A website to show recipes for different category of foods: Beef, Chicken, Soup &
 
 ## Live Link
 
-https://raadiah.github.io/Cook-Book/
+https://soomanib-chef-book.netlify.app/
 
 ## Brief Description
 
