@@ -1,5 +1,10 @@
+const POTATO_MENU = 'potato';
+const SOUP_MENU = 'soup';
+const BEEF_MENU = 'beef';
+const CHICKEN_MENU = 'chicken';
+
 const recipeCategoryName = ()=>{
-    let recipeCategory = 'potato';
+    let recipeCategory = POTATO_MENU;
     let getRecipeCategory = () => {
         return recipeCategory;
     }
@@ -13,8 +18,6 @@ const recipeCategoryName = ()=>{
         setRecipeCategory: setRecipeCategory
     }
 }
-
-const recipeCategory = recipeCategoryName();
 
 const loadRecipe = async ()=>{
     const itemName = recipeCategory.getRecipeCategory();
@@ -30,7 +33,8 @@ const loadRecipe = async ()=>{
     }
 }
 
-loadRecipe('Potato');
+const recipeCategory = recipeCategoryName();
+recipeCategory.setRecipeCategory(POTATO_MENU);
 
 const showRecipe = (recipeList) => {
     const recipeListElement = document.getElementById('recipe-list');
