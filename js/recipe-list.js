@@ -1,5 +1,5 @@
 const recipeCategoryName = ()=>{
-    let recipeCategory = 'Potato';
+    let recipeCategory = 'potato';
     let getRecipeCategory = () => {
         return recipeCategory;
     }
@@ -34,6 +34,7 @@ loadRecipe('Potato');
 
 const showRecipe = (recipeList) => {
     const recipeListElement = document.getElementById('recipe-list');
+
     recipeListElement.innerHTML = '';
 
     recipeList.forEach(recipeItem => {
