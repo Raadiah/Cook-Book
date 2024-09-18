@@ -1,5 +1,5 @@
 const loadRecipe = async (itemName)=>{
-    const recipeListUrl = `json\\${itemName}.json`;
+    const recipeListUrl = `https://www.themealdb.com/api/json/v1/1/search.php?s=${itemName}`;
 
     try{
         const recipeListJson = await fetch(recipeListUrl);
