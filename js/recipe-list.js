@@ -50,8 +50,8 @@ const showRecipe = (recipeList) => {
                 <figure>
                   <img
                     class='bg-gray-100 min-w-36 min-h-36 m-6'
-                    src="${recipeItem.strImageSource}"
-                    alt="${recipeItem.strImageSource}" />
+                    src="${recipeItem.strMealThumb}"
+                    alt="${recipeItem.strMealThumb}" />
                 </figure>
                 <div class="card-body">
                   <h2 class="card-title"
