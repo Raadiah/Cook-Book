@@ -59,7 +59,7 @@ const showRecipe = (recipeList) => {
                   >
                   ${recipeItem.strMeal.substr(0, 16)}${recipeItem.strMeal.length > 16 ? '...' : ''}
                   </h2>
-                  <div>
+                  <div class='flex gap-2'>
                     <span class='p-2 bg-amber-100 text-xs rounded-lg'>${recipeItem.strCategory}</span>
                     <span class='p-2 bg-rose-100 text-xs rounded-lg'>${recipeItem.strArea}</span>
                   </div>
