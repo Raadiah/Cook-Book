@@ -21,7 +21,7 @@ const recipeCategoryName = ()=>{
 
 const loadRecipe = async ()=>{
     const itemName = recipeCategory.getRecipeCategory();
-    const recipeListUrl = `https://www.themealdb.com/api/json/v1/1/search.php?s=${itemName}`;
+    const recipeListUrl = `json\\${itemName}.json`;
 
     try{
         const recipeListJson = await fetch(recipeListUrl);
