@@ -57,14 +57,14 @@ const showRecipe = (recipeList) => {
                   <h2 class="card-title"
                   alt="${recipeItem.strMeal}"
                   >
-                  ${recipeItem.strMeal.substr(0, 20)}${recipeItem.strMeal.length > 20 ? '...' : ''}
+                  ${recipeItem.strMeal.substr(0, 20)}${recipeItem.strMeal.length > 16 ? '...' : ''}
                   </h2>
                   <div>
                     <span class='p-2 bg-amber-100 text-xs rounded-lg'>${recipeItem.strCategory}</span>
                     <span class='p-2 bg-rose-100 text-xs rounded-lg'>${recipeItem.strArea}</span>
                   </div>
                   <div class="card-actions justify-end">
-                    <i style='width:30px; height: 10px;' class="fa-brands fa-youtube text-red-600"></i>
+                    <a href=${strYoutube} target='_blank'><i class="fa-brands fa-youtube text-xl text-red-600 hover:shadow-sm hover:text-red-700"></i></a>
                   </div>
                 </div>
             </div>
