@@ -64,7 +64,7 @@ const showRecipe = (recipeList) => {
                     <span class='p-2 bg-rose-100 text-xs rounded-lg'>${recipeItem.strArea}</span>
                   </div>
                   <div class="card-actions justify-end">
-                    <i class="fa-brands fa-youtube color-red-600"></i>
+                    <i class="fa-brands fa-youtube w-8 h-8 text-red-600"></i>
                   </div>
                 </div>
             </div>
