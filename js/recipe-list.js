@@ -47,9 +47,9 @@ const showRecipe = (recipeList) => {
 
         recipeCardElem.innerHTML = `
             <div class="card h-80">
-                <figure>
+                <figure class='w-full'>
                   <img
-                    class='bg-gray-100 min-w-36 min-h-36 m-6'
+                    class='bg-gray-100 w-full min-h-36 m-6'
                     src="${recipeItem.strMealThumb}"
                     alt="${recipeItem.strMealThumb}" />
                 </figure>
@@ -64,7 +64,7 @@ const showRecipe = (recipeList) => {
                     <span class='p-2 bg-rose-100 text-xs rounded-lg'>${recipeItem.strArea}</span>
                   </div>
                   <div class="card-actions justify-end">
-                    <i class="fa-brands fa-youtube w-8 h-8 text-red-600"></i>
+                    <i class="fa-brands fa-youtube w-10 h-10 text-red-600"></i>
                   </div>
                 </div>
             </div>
